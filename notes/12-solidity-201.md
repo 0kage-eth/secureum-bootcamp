@@ -30,7 +30,7 @@ Discuss inheritance, abstract functions, virtual & override keywords and other O
 - `abstract` contracts are where atleast one of functions is not implemented. As a result, they cannot be compiled.
 
   - used as a base contracts from which new contracts can be derived
-
+  - use `abstract` keyword
   - Generally an abstract contract contains both implemented as well as abstract functions.
   - Derived contract will implement the abstract function and use the existing functions as and when required.
 
