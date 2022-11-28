@@ -15,3 +15,11 @@ Very good article that explains storage structures of BTC & ETH and goes deep in
 [05-Diving into Ethereum World State](https://medium.com/cybermiles/diving-into-ethereums-world-state-c893102030ed)
 
 Article referenced by above article - has a good explanation on merkle patricia trees
+
+[06-Solidity Diamond Reference](https://forum.openzeppelin.com/t/solidity-diamond-inheritance/2694)
+
+Open Zeppelin article that explains C3 linearization to solve Diamond problem of inheritance
+
+[07-Solidity Docs Inheritance](https://docs.soliditylang.org/en/develop/contracts.html#multiple-inheritance-and-linearization)
+
+Solidity documentation has good explanation on multiple inheritance

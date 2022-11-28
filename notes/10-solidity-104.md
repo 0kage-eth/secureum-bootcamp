@@ -4,7 +4,7 @@
 
 ## Summary
 
-Discuss data types arrays, mappings and struct
+Discuss data types arrays, mappings and struct, error handling and global variables
 
 ### Complex Data Types
 
