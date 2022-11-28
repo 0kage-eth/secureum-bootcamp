@@ -111,4 +111,52 @@ _TokenTimelock_
 [Access control contract source code](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol)
 
 - #role based access control - more generic version of Ownable Contract
--
+- can set a bunch of roles
+- `onlyRole` allows only specific roles to access specific functions
+- every role also has an associated `admin` called roleAdmin
+- roleAdmin can grant role or revoke role to any address
+
+**Pausable**
+[Pausable contract source code](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/Pausable.sol)
+
+-Allows teams to do what is known as a `guarded launch`
+
+- Pause smart contracts when there is an emergency - remediate and then restart
+- `pause()` and `unpause()` contract with authorized access
+- `whenpaused` and `whennotpaused` modifiers
+- if there is any vulnerability or explpit, they can pause contracts
+
+**Rentrancy guard**
+[Reentrancy guard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol)
+
+- reentrancy vulnerability
+- reentrancy is when an external contract (unknown to our contract) can re-enter our contract & exploit a state that has not been updated since the last call to external contract - this can be exploited by external contract to drain funds from our contract
+- transferring tokens multiple times or triggering logic multiple times -> can be done because of reentrancy
+
+- This contract provides a modifier `nonReentrant` and functions of the contract that use this modifier cannot have a re-entry by an external contract
+
+**Pull Payment**
+
+- Payments can be done 2 ways - payee contract can pull payment from payer OR payer can push payment to payee
+- Incase of pullPayments - Paying contract makes no calls on any of functions of 'receiver' contract -> because receiver contract could be a malicious contract
+- Instead, its better for receiver contract to pull payment from payer (withdraw payments)
+- This prevents re-entrancy
+
+**Address**
+
+- Address related functions
+- `isContract()` function -> returns true if account address is contract. if false, its not correct to assume if account address is EOA - isContract returns false if
+
+  - its EOA account
+  - its a contract account but in construction (so we call the isContract() within constructor)
+  - if its an address where contract will be created
+  - address specified had a contract in it but was later destroyed
+
+- `sendValue()` - `transfer` function transfers eth but limits gas supply to 2300 gas units. With `sendValue`, removes 2300 gas restriction and forwards all available gas to the callee contract
+- provides wrappers - `functionCall` `functionCallWithValue` `functionStaticCall` `functionDelegateCall`
+
+**Array**
+
+- Finding index and upper bounds etc
+
+- `findUpperBound` - array and element sorted in ascending order. No repeat elements. returns first index where `element  >= value`, if all elements are lower, it returns `length`
