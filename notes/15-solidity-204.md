@@ -12,7 +12,7 @@ We dicuss more Open eppelin contracts and their security implications
 
 - Gives current execution context when msg.sender and user is different
 - Useful in cases where txn is working with meta txns - meta txns are where account sending txns is different from account user
-- In such situations, relayer between contract and actual users needs to be clearly separated from user - and relayer context should be identified separately from relayer context
+- In such situations, relayer between contract and actual users needs to be clearly separated from user - and relayer context should be identified separately from user context
 - `_msgSender()` and `_msgData()` are 2 functions that help us do separate relayers context and user context
 
 **Counters**
