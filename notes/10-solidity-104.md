@@ -230,5 +230,5 @@ Eg. with bytes
 
 - Valid signature can be converted to a second valid signature without knowledge of private key - this is a key vulnerability that can be exploited by hackers to do a replay attack
 - How signatures are used inside contract needs to be carefully examined -> to prevent scope of replay attacks
-- Reason behind this malleability is how ECRE works -> `Sig -> (v, r, s)`, `s` value can be in lower order range or higher order range -> ie 2 values of `s` give same signature
-- If contract needs unique signatures, current best practice is to use OpenZeppelin ECDSA wrapper (study more about this...) -> library forces `s` value to be in lower range -> so a single unique signature is enforced
+- Reason behind this malleability is how EcRecover works -> `Sig -> (v, r, s)`, `s` value can be in lower order range or higher order range -> ie 2 values of `s` give same signature
+- If contract needs unique signatures, current best practice is to use OpenZeppelin ECDSA wrapper (study more about this...) -> library forces `s` value to be in lower range -> so a single unique signature is enforced. Discussed in [lesson 15](./15-solidity-204.md)
