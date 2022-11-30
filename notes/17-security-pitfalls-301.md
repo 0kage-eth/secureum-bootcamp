@@ -242,6 +242,8 @@ _Mitigation_
 - CEI pattern is, make a check, effect changes to state variables, and only once this complete, make an external call
 - Reentrancy Guards by OZ libraries are also recommended to use -> all vulnerable functions (eg. ones changing balances) should use reentrancy modifiers
 
+---
+
 ### V13 - ERC777 callbacks
 
 _Background_
@@ -263,6 +265,8 @@ _Mitigation_
 - Best practice is to follow CEI Pattern (Checks -> Effects -> Interactions)
 - Again, use reentrancy guard libraries on calling contract
 
+---
+
 ### V14 - Transfer() and Send() functions
 
 _Background_
@@ -283,6 +287,8 @@ _Mitigation_
 - Also `call` is superior because we can send `data` to the callee function
 - Couple this `call` usage with rentrancy guard
 
+---
+
 ### V15 - private data
 
 _Background_
@@ -301,6 +307,8 @@ _Mitigation_
 - Do not have any sensistive data, keys etc on contract, even if the visibility is made private
 - Any data that must be stored on chain as `private` must be encrypted and stored offchain
 
+---
+
 ### V16 - psuedo random number generators
 
 _Background_
@@ -317,6 +325,8 @@ _Risk_
 _Mitigation_
 
 - Use chain link VRF (Verified Random Number Generator) service to generate a random number verifiable onchain
+
+---
 
 ### V17 - overflow/underflow
 
@@ -335,6 +345,8 @@ _Mitigation_
 - All contracts >0.8.0 have arithemtic underflows/overflows automatically handled
 - To unhandle, we can use the `uncheck` keyword to block (although not recommended)
 - if using <0.8.0, use `SafeMath` library
+
+---
 
 ### V18 - using divide before multiply
 
