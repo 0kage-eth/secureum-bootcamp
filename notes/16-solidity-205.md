@@ -4,7 +4,7 @@
 
 ## Summary
 
-More OZ contracts
+More OZ contracts, Dappsys Contracts, WETH, Uniswap and ChainLink intro
 
 ### More OZ Contracts
 
