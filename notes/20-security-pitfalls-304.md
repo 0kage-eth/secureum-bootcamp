@@ -322,7 +322,7 @@ _Mitigation_
 
 ---
 
-### V58 - Compiler error - Storage arrays
+### V58 - Compiler Bug: Storage arrays
 
 _Background_
 
@@ -344,7 +344,7 @@ NA
 
 ---
 
-### V59 - Constructor Arguments
+### V59 - Compiler Bug: Constructor Arguments
 
 _Background_
 
@@ -362,7 +362,7 @@ NA
 
 ---
 
-### V60 - Storage Array elements
+### V60 - Compiler Bug: Storage Array elements
 
 _Background_
 
@@ -378,7 +378,7 @@ NA
 
 ---
 
-### V61 - Structs
+### V61 - Compiler Bug: CallData Structs
 
 _Background_
 
