@@ -350,7 +350,7 @@ _Risk_
 
 - Exploit logic limits on balance by manipulating supply to the contract
 
-\_Mitigation
+_Mitigation_
 
 - Check balance logic & see if the logic can fail when large tokens are transferred into the contract
 
