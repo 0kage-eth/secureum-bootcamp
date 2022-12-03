@@ -1,4 +1,4 @@
-# SECURITY PITFALLS 101
+# AUDIT TECHNIQUES AND TOOLS 101
 
 [Video](https://www.youtube.com/watch?v=M0C7z3TE5Go&t=28s)
 
