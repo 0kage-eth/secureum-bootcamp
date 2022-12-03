@@ -1,4 +1,4 @@
-# SECURITY PITFALLS 204
+# SECURITY PITFALLS 101
 
 [Video](https://www.youtube.com/watch?v=M0C7z3TE5Go&t=28s)
 
@@ -82,7 +82,7 @@ _Cost_
 - strength and reputation of audit firm
 - starts from ~7000$ a week
 
-\_Pre-requisites
+_Pre-requisites_
 
 - Clear scope of project to be assessed
 - particular hash of a github repository (could be public or private)
@@ -90,7 +90,7 @@ _Cost_
 - specifications of the project
 - documentation and associated business logic
 - trust and threat modules and specific areas of concern
-- include all prior testing and revies
+- include all prior testing and reviews
 - tools used from previous audits
 - timeline, cost and effort
 - engagement mode - preferred way of engaging
@@ -257,3 +257,5 @@ _Serverity_
        - very few projects have detailed specifications at audit stage
        - at best they have documentation on what is implemented
        - auditors spend a lot of time inferring specification from documentation of process and implementation
+
+    contd in next lesson..
