@@ -186,3 +186,6 @@ _Likelihood & impact_
 - High imapct - any loss or locking up of funds is high impact
 - Medium impact - no loss of funds but disrupt function of platform
 - low impact - anything else
+
+- Some classifications of likelihood and impact are contentious and debated between audit teams and project teams
+- this typically happens when audit teams press for higher impact & project teams tend to downplay them
