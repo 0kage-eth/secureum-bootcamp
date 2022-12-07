@@ -12,3 +12,7 @@ Here is list of audits covered in the bootcamp and their links
 | DFX Finance         | Trail of Bits | Report | Code |
 | Hermez Network      | Trail of Bits | Report | Code |
 | Advanced Blockchain | Trail of Bits | Report | Code |
+| dForce Lending      | Trail of Bits | Report | Code |
+| Synthetix           |  Sigma Prime  | Report | Code |
+| InfiniGold          |  Sigma Prime  | Report | Code |
+| Holdefi             | Open Zeppelin | Report | Code |
