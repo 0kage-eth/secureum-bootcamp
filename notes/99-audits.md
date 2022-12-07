@@ -16,3 +16,9 @@ Here is list of audits covered in the bootcamp and their links
 | Synthetix           |  Sigma Prime  | Report | Code |
 | InfiniGold          |  Sigma Prime  | Report | Code |
 | Holdefi             | Open Zeppelin | Report | Code |
+| Barnbridge          | Open Zeppelin | Report | Code |
+| Compound            | Open Zeppelin | Report | Code |
+| Fei                 | Open Zeppelin | Report | Code |
+| UMA                 | Open Zeppelin | Report | Code |
+| Open Gamma          | Open Zeppelin | Report | Code |
+| Pool Together V3    | Open Zeppelin | Report | Code |
